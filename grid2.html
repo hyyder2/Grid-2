@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 80vh;
+        }
+ .main {     
+            width: 90vh; 
+            height: 50vh;
+            display: grid;
+            
+            gap: 10px; 
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows:  2fr 2fr 2fr 2fr 2fr ;       
+            grid-template-areas: 
+            "header header nav side"
+            "aside hero footer . "
+            "itemg itemg itemh itemi"
+            "itemg itemg itemj ."
+            "itemk  itemk itemk iteml";
+    
+    }
+
+        .header {
+            grid-area: header;
+            background-color: aqua;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: rgb(67, 83, 83);
+        }
+
+        .side {
+            grid-area: side;
+            background-color: rgb(115, 209, 209);
+        }
+
+        .aside {
+            grid-area: aside;
+            
+            background-color: rgb(15, 218, 218);
+        }
+
+        .hero{
+            grid-area: hero;
+            background-color: rgb(155, 67, 103);
+        }
+
+        .footer {
+            grid-area:footer;
+            background-color: rgb(219, 139, 33);
+        }
+
+        .itemg {
+            grid-area: itemg;
+            background-color: rgb(143, 50, 81);
+        }
+
+        .itemh {
+            grid-area: itemh;
+            background-color: rgb(20, 145, 37);
+        }
+
+        .itemi {
+            grid-area: itemi;
+            background-color: rgb(216, 195, 3);
+        }
+
+        .itemj {
+            grid-area: itemj;
+            background-color: rgb(11, 66, 14);
+
+
+        }
+
+        .itemk {
+            grid-area: itemk;
+            background-color: rgb(151, 149, 129);
+
+        }
+
+        .iteml {
+            grid-area: iteml;
+            background-color: rgb(63, 204, 126);
+
+        }
+        /* @media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "side"
+            "aside"
+            "hero"
+            "footer"
+            "itemg"
+            "itemh"
+            "itemi"
+            "itemj"
+            "itemk"
+            "iteml";
+        width: 95vw;
+    } */
+/* } */
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header"></div>
+        <div class="nav"></div>
+        <div class="side"></div>
+        <div class="aside"></div>
+        <div class="hero"></div>
+        <div class="footer"></div>
+        <div class="itemg"></div>
+        <div class="itemh"></div>
+        <div class="itemi"></div>
+        <div class="itemj"></div>
+        <div class="itemk"></div>
+        <div class="iteml"></div>
+    </div>
+</body>
+
+</html>
